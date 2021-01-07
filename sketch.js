@@ -12,7 +12,13 @@ var color
 
 function preload()
 {  
-getTime()
+ if (hour>6 && hour<18){
+
+    color = loadImage("bg.png")
+  }
+  else{
+    color = loadImage("bg2.jpg")
+  }
 }
 
 function setup() {
@@ -198,13 +204,7 @@ var responseJson = await response.json();
 var dateTime = responseJson.datetime;
 hour = dateTime.slice(11, 13);
 	
-  if (hour>6 && hour<18){
-
-    color = loadImage("bg.png")
-  }
-  else{
-    color = loadImage("bg2.jpg")
-  }
+ 
 }
 
 
