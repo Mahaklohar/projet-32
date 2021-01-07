@@ -52,17 +52,17 @@ function setup() {
 	// Tower 2: 
 	platform2 = new Ground(1090, 380, 200, 10);
 	// Layer 1: 
-	box17 = new Block(1030, 340, "SkyBlue");
-	box18 = new Block(1060, 335, "SkyBlue");
-	box19 = new Block(1090, 335, "SkyBlue");
-	box20 = new Block(1120, 335, "SkyBlue");
-	box21 = new Block(1150, 340, "SkyBlue");
+	box17 = new Block(1030, 375, "SkyBlue");
+	box18 = new Block(1060, 375, "SkyBlue");
+	box19 = new Block(1090, 375, "SkyBlue");
+	box20 = new Block(1120, 375, "SkyBlue");
+	box21 = new Block(1150, 375, "SkyBlue");
 	// Layer 2: 
-	box22 = new Block(1060, 300, "LightGreen");
-	box23 = new Block(1090, 300, "LightGreen");
-	box24 = new Block(1120, 300, "LightGreen");
+	box22 = new Block(1060, 335, "LightGreen");
+	box23 = new Block(1090, 335, "LightGreen");
+	box24 = new Block(1120, 335, "LightGreen");
 	// Layer 3: 
-    box25 = new Block(1090, 260, "yellow");
+    box25 = new Block(1090, 295, "yellow");
     
     poly1 = new Polygon(200, 450, 25);
 
