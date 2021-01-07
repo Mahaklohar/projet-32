@@ -12,13 +12,7 @@ var color
 
 function preload()
 {  
-  if (hour>6 && hour<20){
-
-    color = loadImage("bg.png")
-  }
-  else{
-    color = loadImage("bg2.jpg")
-  }
+getTime()
 }
 
 function setup() {
@@ -203,6 +197,14 @@ var response = await fetch(" http://worldtimeapi.org/api/timezone/Asia/Kolkata")
 var responseJson = await response.json();
 var dateTime = responseJson.datetime;
 hour = dateTime.slice(11, 13);
+	
+  if (hour>6 && hour<18){
+
+    color = loadImage("bg.png")
+  }
+  else{
+    color = loadImage("bg2.jpg")
+  }
 }
 
 
